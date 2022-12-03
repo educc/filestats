@@ -41,6 +41,21 @@ java -jar target/filestats-0.0.1-SNAPSHOT.jar -i tmp -ex-s countWords,mostUsedWo
 java -jar target/filestats-0.0.1-SNAPSHOT.jar -i tmp -ex-r txt -ex-s countWords
 ```
 
+# How to extend
+
+To support more files you only need:
+
+- Create a new class in the ```com.edu.filestats.contentreader.internal``` package.
+- The new class must inherits ```ContentReader```
+
+To support more statistics you only need:
+
+- Create a new class in the ```com.edu.filestats.statistics.internal;``` package.
+- The new class must inherits ```StatisticStrategy```
+
+Compile and run again, the code will take care of the new classes and automatically will use the new classes.
+This follows the Open-Close principle from SOLID principles.
+
 # App arguments
 
 ```plain
