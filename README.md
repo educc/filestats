@@ -4,10 +4,11 @@ To process files and get statistics.
 
 # Not implemented
 
-I did not have enough time to implement the following:
+- I did many things this weekend so I did not have enough time to implement the following :
 
 - Create this program as a daemon to watch files.
 - Get the statistics for files in parallel.
+- It does not ready line by line. The code loads the whole file in memory so it will crash when you put large files.
 - UML class diagram made by hand, only auto generated from code.
 
 # Requirements
